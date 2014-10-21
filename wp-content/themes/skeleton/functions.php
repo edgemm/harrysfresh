@@ -1073,4 +1073,12 @@ function hff_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'hff_scripts' );
 
+// get ID of YouTube video for specific post
+function get_youtube_id( $p ) {
+   $f_video_url = get_post_meta( $p, 'featured_video_url', true );
+   parse_str( parse_url( $f_video_url, PHP_URL_QUERY ), $f_video );
+   
+   return $f_video['v'];
+}
+
 ?>

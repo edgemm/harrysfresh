@@ -111,6 +111,22 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 	white-space: nowrap;
 }
 
+.video-container {
+	height: 0; 
+	padding-bottom: 56.25%;
+	position: relative;
+	overflow: hidden;
+}
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
 #header {
 	clear: both;
 }
@@ -993,6 +1009,7 @@ body.logged-in li.guest {
 /* #Images
 ================================================== */
 
+img,
 img.scale-with-grid {
 	max-width: 100%;
 	height: auto; }
@@ -1772,6 +1789,61 @@ span.news_box {
 	overflow: hidden;
 }
 
+
+/* POST ENTRY UPDATES */
+
+.entry-community {
+	margin-bottom: 10px;
+	padding: 20px;
+	font-size: .9em;
+	-moz-box-shadow: 3px 0px 5px 1px rgba(0,0,0,.38);
+	-webkit-box-shadow: 3px 3px 5px 1px rgba(0,0,0,.38);
+	box-shadow: 3px 3px 5px 1px rgba(0,0,0,.38);
+	background: rgba(255,255,255,0.75);
+}
+
+.entry-community .entry-title,
+.single .entry-title {
+	width: auto;
+	padding-left: 0;
+	padding-right: 0;
+	float: none;
+	position: static;
+	text-align: left;
+	color: #a82200 !important;
+}
+
+.entry-community .entry-title > a {
+	color: #a82200 !important;
+}
+
+.featured-media {
+	max-width: 100%;
+}
+
+.entry-article {
+	margin-top: 20px;
+}
+
+.single .entry-content {
+	margin-top: 20px;
+}
+
+.single .featured {
+	width: 447px;
+	max-width: 100%;
+	margin-right: 20px;
+	float: left;
+	border: 2px solid #fff;
+	-webkit-box-shadow: 0 0 2px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0 0 2px rgba(0,0,0,0.75);
+	box-shadow: 0 0 2px rgba(0,0,0,0.75);
+}
+.single .featured > img {
+	display: block;
+}
+
+
 /* MOBILE */
 
 @media screen and (max-width: 959px) {
@@ -2062,6 +2134,16 @@ h1.content-separator {
 .contact-form .wpcf7-form-control {
 	max-width: 100%;
 	box-sizing: border-box;
+}
+
+.single .entry-title {
+	margin-right: 5%;
+	margin-left: 5%;
+}
+
+.single .featured {
+	width: 100%;
+	margin-bottom: 20px;
 }
 
 }

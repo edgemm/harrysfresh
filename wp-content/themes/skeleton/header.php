@@ -106,10 +106,15 @@ html.ie #author-info {behavior: url("<?php echo get_stylesheet_directory_uri();?
 		wp_enqueue_script( 'comment-reply' );
 	// Load head elements
 	wp_head();
+	
+	// add custom background image if selected
+	if( get_field( 'post_background_image' ) ) :
+		$post_bg = ' style="background: url( \'' . get_field( 'post_background_image' ) . '\' ) no-repeat center center fixed; background-size: cover;"';
+	endif;
 ?>
 
 </head>
-<body <?php body_class(); ?>>
+<body <?php body_class(); ?> <?php echo $post_bg; ?>>
 <div id="fb-root"></div>
 <script>(function(d, s, id) {
   var js, fjs = d.getElementsByTagName(s)[0];

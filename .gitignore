@@ -5,9 +5,11 @@
 *.bak
 *.swp
 Thumbs.db
+.htaccess
 
 # wordpress specific
 wp-config.php
+wp-content/plugins/
 wp-content/themes/twentyten
 wp-content/themes/twentyeleven
 wp-content/themes/twentytwelve
