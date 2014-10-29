@@ -406,6 +406,31 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 	a:hover, a:focus { color: #000; text-decoration: none;}
 	p a, p a:visited { line-height: inherit; }
 
+	.btns-centered {
+		text-align: centered;
+	}
+	.btn {
+		width: 156px;
+		height: 35px;
+		margin: 0 15px;
+		display: inline-block;
+		position: relative;
+		line-height: 35px;
+		font-size: .8em;
+		text-decoration: none;
+		text-align: center;
+		color: #fefdf5;
+	}
+	.btn-orange {
+		background: url( 'images/downloadable-pos-button.png' ) no-repeat center center;
+	}
+	.btn-green {
+		background: url( 'images/recipe-suggestions-button.png' ) no-repeat center center;
+	}
+	.btn-yellow {
+		background: url( 'images/profitability-calculator-button.png' ) no-repeat center center;
+	}
+
 
 /* #Lists
 ================================================== */
@@ -1412,7 +1437,8 @@ bottom: 10px;
   color:transparent;
 }
 
-.product-title, .entry-title {
+.product-title,
+.single-harrys-products .harrys-products .entry-title {
 	width: 290px;
 	text-align: center;
 	text-transform: uppercase;
@@ -1464,7 +1490,7 @@ bottom: 10px;
 	margin-top:90px;
 }
 
-.entry-title {
+.single-harrys-products .harrys-products .entry-title {
 	float:right;
 	position:absolute;
 	right:5%;
