@@ -14,7 +14,12 @@
  * @author Simple Themes - www.simplethemes.com
  */
 ?>
-
+<style type="text/css">
+.entry-content {
+	margin-top: 20px;
+}
+</style>
+<div class="fourteen columns offset-by-one">
 <?php if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 
 				<div id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -33,7 +38,7 @@
 					} ?>
 				<?php } ?>
 				
-					<div class="entry-content">
+					<div class="entry-content clearfix">
 						<?php the_content(); ?>
 						<?php wp_link_pages( array( 'before' => '<div class="page-link">' . __( 'Pages:', 'skeleton' ), 'after' => '</div>' ) ); ?>
 					</div><!-- .entry-content -->
@@ -42,3 +47,5 @@
 				<?php comments_template( '', true ); ?>
 
 <?php endwhile; // end of the loop. ?>
+
+</div><!--end columns-->

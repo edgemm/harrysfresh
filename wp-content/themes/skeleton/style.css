@@ -398,6 +398,10 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 	blockquote cite a, blockquote cite a:visited, blockquote cite a:visited { color: #555; }
 
 	hr { border: solid #ddd; border-width: 1px 0 0; clear: both; margin: 10px 0 30px; height: 0; }
+	
+	.color-orange {
+		color: #e07d03;
+	}
 
 
 /* #Links
@@ -415,11 +419,14 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 		margin: 0 15px;
 		display: inline-block;
 		position: relative;
-		line-height: 35px;
+		line-height: 35px !important;
 		font-size: .8em;
 		text-decoration: none;
 		text-align: center;
 		color: #fefdf5;
+	}
+	.btn:first-child {
+		margin-left: 0;
 	}
 	.btn:hover {
 		opacity: 0.8;

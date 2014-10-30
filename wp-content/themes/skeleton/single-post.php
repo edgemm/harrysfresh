@@ -16,7 +16,7 @@ if ( have_posts() ) while ( have_posts() ) : the_post(); ?>
 <div id="post-<?php the_ID(); ?>" <?php post_class('single page'); ?>>
         <h1 class="entry-title"><?php the_title(); ?></h1>
 
-        <div class="entry-content">
+        <div class="entry-content clearfix">
             <?php
             // class used by either media type            
             $featured_class = "featured-media";
