@@ -407,7 +407,7 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 	p a, p a:visited { line-height: inherit; }
 
 	.btns-centered {
-		text-align: centered;
+		text-align: center;
 	}
 	.btn {
 		width: 156px;
@@ -420,6 +420,10 @@ body.post-type-archive-harrys-products, body.tax-products-category, body.tax-pro
 		text-decoration: none;
 		text-align: center;
 		color: #fefdf5;
+	}
+	.btn:hover {
+		opacity: 0.8;
+		color: #fff;
 	}
 	.btn-orange {
 		background: url( 'images/downloadable-pos-button.png' ) no-repeat center center;

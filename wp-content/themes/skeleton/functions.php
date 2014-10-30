@@ -1068,8 +1068,8 @@ function add_googleanalytics() { ?>
 
 // add scripts for harrysfresh.com - gfh
 function hff_scripts() {
-	// generic scripts used across site - gfh
-	wp_enqueue_script( 'mobile-scripts', get_stylesheet_directory_uri() . '/javascripts/mobile.js', array(), '1.0.0', true );
+	// generic scripts used across site
+	wp_enqueue_script( 'hff-scripts', get_stylesheet_directory_uri() . '/javascripts/scripts.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'hff_scripts' );
 
