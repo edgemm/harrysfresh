@@ -1878,6 +1878,15 @@ span.news_box {
 	border-color: rgba(166,166,166,.75);
 }
 
+/* INDIVIDUAL POSTS/PAGES */
+
+#post-1349 .entry-title {
+	display: none;
+}
+#post-1349 .entry-content {
+	margin-top: 0;
+}
+
 
 /* MOBILE */
 
