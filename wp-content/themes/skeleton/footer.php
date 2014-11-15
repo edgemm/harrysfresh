@@ -53,7 +53,7 @@
     
 </div>
 <div id="company-links" class="sixteen columns">
-	<a href="http://www.cuizina.com"><img src="<?php echo get_bloginfo('template_url'); ?>/images/cuizina.png" /></a> <a href="http://www.jgcfoods.com"><img style="margin-left:20px" src="<?php echo get_bloginfo('template_url'); ?>/images/jgc.png" /></a> <a href="http://www.joshuagreencorp.com"><img style="margin-left:20px" src="<?php echo get_bloginfo('template_url'); ?>/images/jgcorp.png" /></a><br />
+	<a href="http://www.cuizina.com"><img src="<?php echo get_bloginfo('template_url'); ?>/images/cuizina.png" /></a><br />
     &copy; <?php echo date( 'Y' ); ?> Harry's Fresh Foods, All rights reserved.
 </div>
 
