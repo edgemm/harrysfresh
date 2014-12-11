@@ -147,7 +147,12 @@ h1.page-title {
 					} else {
 						$url = $row['file'];
                                         }
-                                        echo '<p><a href="'. $url .'" target="_blank">'. $row['link_text'].'</a></p>
+					if( $row['tracking'] ) {
+						$tracking = " " . $row['tracking'];
+					} else {
+						$tracking = "";
+					}
+                                        echo '<p><a href="'. $url .'" target="_blank"'. $tracking .'>'. $row['link_text'].'</a></p>
                                     </div>
                                 </div>';
 											}

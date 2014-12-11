@@ -183,7 +183,7 @@ body {
 												else
 													$food_service_file_thumb = '<img class="file-icon" src="../../wp-content/themes/skeleton/images/hff/file_icon.png" width="50" height="50" />';
 											
-												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $food_service_file_thumb . '</a><br /><p><span class="file-title">' . $row['food_service_file_title'].'</span><br />'. $row['package_quantity'] .'<br />'.$row['product_type'].'<br /><em><a href="' . $url . '" target="_blank">'. $row['link_text'].'</a></em> </p></span>';
+												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $food_service_file_thumb . '</a><br /><p><span class="file-title">' . $row['food_service_file_title'].'</span><br />'. $row['package_quantity'] .'<br />'.$row['product_type'].'<br /><em><a href="' . $url . '" target="_blank" onClick="_gaq.push([\'_trackEvent\', \'PDF\', \'Download\', \'Nutrition\']);">'. $row['link_text'].'</a></em> </p></span>';
 											}
 										}
 									 
@@ -211,7 +211,7 @@ body {
 												else
 													$food_service_soup_card_thumb = '<img class="file-icon" src="../../wp-content/themes/skeleton/images/hff/file_icon.png" width="50" height="50" />';
 											
-												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $food_service_soup_card_thumb . '</a><br /><p><span class="file-title">' . $row['title'].'</span><br />'. $row['product_type'] .'<br />'. $row['file_type'] .'<br /><em><a href="' . $url . '" target="_blank">'. $row['link_text'].'</a></em> </p></span>';
+												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $food_service_soup_card_thumb . '</a><br /><p><span class="file-title">' . $row['title'].'</span><br />'. $row['product_type'] .'<br />'. $row['file_type'] .'<br /><em><a href="' . $url . '" target="_blank" onClick="_gaq.push([\'_trackEvent\', \'PDF\', \'Download\', \'Soup Card\']);">'. $row['link_text'].'</a></em> </p></span>';
 											}
 										}
 									 
@@ -242,7 +242,7 @@ body {
 												else
 													$food_service_file_thumb = '<img class="file-icon" src="../../wp-content/themes/skeleton/images/hff/file_icon.png" width="50" height="50" />';
 											
-												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $food_service_file_thumb . '</a><br /><p><span class="file-title">' . $row['food_service_file_title'].'</span><br />'. $row['package_quantity'] .'<br />'.$row['product_type'].'<br /><em><a href="' . $url . '" target="_blank">'. $row['link_text'].'</a></em> </p></span>';
+												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $food_service_file_thumb . '</a><br /><p><span class="file-title">' . $row['food_service_file_title'].'</span><br />'. $row['package_quantity'] .'<br />'.$row['product_type'].'<br /><em><a href="' . $url . '" target="_blank" onClick="_gaq.push([\'_trackEvent\', \'PDF\', \'Download\', \'Nutrition\']);">'. $row['link_text'].'</a></em> </p></span>';
 											}
 										}
 									 		
@@ -270,7 +270,7 @@ body {
 												else
 													$food_service_soup_card_thumb = '<img class="file-icon" src="../../wp-content/themes/skeleton/images/hff/file_icon.png" width="50" height="50" />';
 											
-												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $food_service_soup_card_thumb . '</a><br /><p><span class="file-title">' . $row['title'].'</span><br />'. $row['product_type'] .'<br />'. $row['file_type'] .'<br /><em><a href="' . $url . '" target="_blank">'. $row['link_text'].'</a></em> </p></span>';
+												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $food_service_soup_card_thumb . '</a><br /><p><span class="file-title">' . $row['title'].'</span><br />'. $row['product_type'] .'<br />'. $row['file_type'] .'<br /><em><a href="' . $url . '" target="_blank" onClick="_gaq.push([\'_trackEvent\', \'PDF\', \'Download\', \'Soup Card\']);">'. $row['link_text'].'</a></em> </p></span>';
 											}
 										}
 									 
@@ -315,7 +315,7 @@ body {
 												else
 													$retail_file_thumb = '<img class="file-icon" src="../../wp-content/themes/skeleton/images/hff/file_icon.png" width="50" height="50" />';
 											
-												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $retail_file_thumb . '</a><br /><p><span class="file-title">' . $row['retail_file_title'].'</span><br />'. $row['package_quantity'] .'<br />'.$row['product_type'].'<br /><em><a href="' . $url . '" target="_blank">'. $row['link_text'].'</a></em> </p></span>';
+												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $retail_file_thumb . '</a><br /><p><span class="file-title">' . $row['retail_file_title'].'</span><br />'. $row['package_quantity'] .'<br />'.$row['product_type'].'<br /><em><a href="' . $url . '" target="_blank" onClick="_gaq.push([\'_trackEvent\', \'PDF\', \'Download\', \'Nutrition\']);">'. $row['link_text'].'</a></em> </p></span>';
 											}
 										}
 									 
@@ -343,7 +343,7 @@ body {
 												else
 													$retail_soup_card_thumb = '<img class="file-icon" src="../../wp-content/themes/skeleton/images/hff/file_icon.png" width="50" height="50" />';
 											
-												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $retail_soup_card_thumb . '</a><br /><p><span class="file-title">' . $row['title'].'</span><br />'. $row['product_type'] .'<br />'. $row['file_type'] .'<br /><em><a href="' . $url . '" target="_blank">'. $row['link_text'].'</a></em> </p></span>';
+												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $retail_soup_card_thumb . '</a><br /><p><span class="file-title">' . $row['title'].'</span><br />'. $row['product_type'] .'<br />'. $row['file_type'] .'<br /><em><a href="' . $url . '" target="_blank" onClick="_gaq.push([\'_trackEvent\', \'PDF\', \'Download\', \'Soup Card\']);">'. $row['link_text'].'</a></em> </p></span>';
 											}
 										}
 									 
@@ -374,7 +374,7 @@ body {
 												else
 													$retail_file_thumb = '<img class="file-icon" src="../../wp-content/themes/skeleton/images/hff/file_icon.png" width="50" height="50" />';
 											
-												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $retail_file_thumb . '</a><br /><p><span class="file-title">' . $row['retail_file_title'].'</span><br />'. $row['package_quantity'] .'<br />'.$row['product_type'].'<br /><em><a href="' . $url . '" target="_blank">'. $row['link_text'].'</a></em> </p></span>';
+												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $retail_file_thumb . '</a><br /><p><span class="file-title">' . $row['retail_file_title'].'</span><br />'. $row['package_quantity'] .'<br />'.$row['product_type'].'<br /><em><a href="' . $url . '" target="_blank" onClick="_gaq.push([\'_trackEvent\', \'PDF\', \'Download\', \'Nutrition\']);">'. $row['link_text'].'</a></em> </p></span>';
 											}
 										}
 									 		
@@ -402,7 +402,7 @@ body {
 												else
 													$retail_soup_card_thumb = '<img class="file-icon" src="../../wp-content/themes/skeleton/images/hff/file_icon.png" width="50" height="50" />';
 											
-												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $retail_soup_card_thumb . '</a><br /><p><span class="file-title">' . $row['title'].'</span><br />'. $row['product_type'] .'<br />'. $row['file_type'] .'<br /><em><a href="' . $url . '" target="_blank">'. $row['link_text'].'</a></em> </p></span>';
+												echo '<span class="file-item three columns"><a href="' . $url . '" target="_blank">' . $retail_soup_card_thumb . '</a><br /><p><span class="file-title">' . $row['title'].'</span><br />'. $row['product_type'] .'<br />'. $row['file_type'] .'<br /><em><a href="' . $url . '" target="_blank" onClick="_gaq.push([\'_trackEvent\', \'PDF\', \'Download\', \'Soup Card\']);">'. $row['link_text'].'</a></em> </p></span>';
 											}
 										}
 									 
