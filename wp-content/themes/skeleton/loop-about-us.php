@@ -14,7 +14,7 @@
  * @author Simple Themes - www.simplethemes.com
  */
  
-  $backgroundImage = get_bloginfo('template_directory').'/images/about-us-background.jpg'; ?>
+  $backgroundImage = get_bloginfo('template_directory').'/images/bg-potatoprep.jpg'; ?>
 <style>
 body {	
 	background: url('<?php echo $backgroundImage; ?>') no-repeat center center fixed; 

@@ -14,7 +14,7 @@
  * @author Simple Themes - www.simplethemes.com
  */
  
-  $backgroundImage = get_bloginfo('template_directory').'/images/custom-background.jpg'; ?>
+  $backgroundImage = get_bloginfo('template_directory').'/images/bg-rustickitchen.jpg'; ?>
 <style>
 body {	
 	background: url('<?php echo $backgroundImage; ?>') no-repeat center center fixed; 

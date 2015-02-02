@@ -21,7 +21,7 @@ $(function() {
 	    }
       });
 	  
-	  $('#ca-container').contentcarousel();
+	  //$('#ca-container').contentcarousel();
 	  
 	  var carouselClick = setInterval(function (){$('.ca-nav-next').trigger('click');},3500);    
 

@@ -253,7 +253,7 @@ if ( !function_exists( 'st_header_scripts' ) ) {
 		$javascripts .= wp_enqueue_script('jquery-ui', '//ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js',array('jquery'), false, true);
 		$javascripts .= wp_enqueue_script('custom',get_bloginfo('template_url') ."/javascripts/app.js",array('jquery','jquery-ui'),'1.2.4',true);
 		$javascripts .= wp_enqueue_script('superfish',get_bloginfo('template_url') ."/javascripts/superfish.js",array('jquery'),'1.2.3',true);
-		$javascripts .= wp_enqueue_script('carousel',get_bloginfo('template_url') ."/javascripts/jquery.contentcarousel.js",array('jquery'),'1.2.3',true);
+		//$javascripts .= wp_enqueue_script('carousel',get_bloginfo('template_url') ."/javascripts/jquery.contentcarousel.js",array('jquery'),'1.2.3',true);
 		//$javascripts .= wp_enqueue_script('mousewheel',get_bloginfo('template_url') ."/javascripts/jquery.mousewheel.js",array('jquery'),'1.2.3',true);
 		//$javascripts .= wp_enqueue_script('validate',get_bloginfo('template_url') ."/javascripts/validate.js",array('jquery'),'1.2.3',true);
 		$javascripts .= wp_enqueue_script('easing',get_bloginfo('template_url') ."/javascripts/jquery.easing.1.3.js",array('jquery'),'1.2.3',true);
@@ -849,6 +849,10 @@ if ( !function_exists( 'st_before_content' ) ) {
 	$columns = 'sixteen';
 	}
 
+        if ( is_post_type_archive('harrys-products') ) {
+        $columns = $columns . " page"; 
+        }
+
 	// Apply the markup
 	echo "<a name=\"top\" id=\"top\"></a>";
 	echo "<div id=\"content\" class=\"$columns columns\">";
@@ -1055,6 +1059,9 @@ add_filter( 'wpcf7_support_html5_fallback', '__return_true' );
 add_action('wp_footer', 'add_googleanalytics');
 function add_googleanalytics() { ?>
 <script>
+
+  var _gaq = _gaq || [];
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -1069,7 +1076,9 @@ function add_googleanalytics() { ?>
 // add scripts for harrysfresh.com - gfh
 function hff_scripts() {
 	// generic scripts used across site
-	wp_enqueue_script( 'hff-scripts', get_stylesheet_directory_uri() . '/javascripts/scripts.js', array(), '1.0.0', true );
+	//wp_enqueue_script( 'hff-scripts', get_stylesheet_directory_uri() . '/javascripts/scripts.js', array(), '1.0.0', true );
+        // mobile scripts
+	wp_enqueue_script( 'hff-mobile', get_stylesheet_directory_uri() . '/javascripts/mobile.js', array(), '1.0.0', true );
 }
 add_action( 'wp_enqueue_scripts', 'hff_scripts' );
 

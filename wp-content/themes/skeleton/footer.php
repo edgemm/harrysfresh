@@ -53,6 +53,7 @@
     
 </div>
 <div id="company-links" class="sixteen columns">
+	    <img class="scale-with-grid round" src="/wp-content/themes/skeleton/images/harrys-logo.png" alt="Harry's Fresh Foods">
 	<a href="http://www.cuizina.com"><img src="<?php echo get_bloginfo('template_url'); ?>/images/cuizina.png" /></a><br />
     &copy; <?php echo date( 'Y' ); ?> Harry's Fresh Foods, All rights reserved.
 </div>
