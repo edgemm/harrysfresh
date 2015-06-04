@@ -24,13 +24,7 @@ $args = array(
   'order' => 'ASC',
   'hide_empty' => 0
   );
-$categoriesList = get_categories($args);
-$categories = array(	$categoriesList[1],
-						$categoriesList[5],
-						$categoriesList[4],
-						$categoriesList[0],
-						$categoriesList[2],
-						$categoriesList[3] );
+$categories = get_categories($args);
 ?>
 </div><!-- end content -->
 </div><!-- end wrap -->

@@ -102,7 +102,7 @@ overflow:hidden;
                <select name="concentration" onchange="calcSpreadsheet()">
   					<option value="1" selected="">Not applicable.</option> 
  					<option value="2">1:1</option>
-  					<option value="4">3:1</option>
+  					<option value="1.333333333333333333333333333333">3:1</option>
 </select>
                
                <label for="ounces">
@@ -225,7 +225,7 @@ overflow:hidden;
 			if ( !unit_size == "" && !case_pack == "")
 			{
 				ounces = 16 * unit_size * case_pack * concentration;
-				formObject.elements['ounces'].value = ounces;
+				formObject.elements['ounces'].value = ounces.toFixed( 2 );
 			}
 
 			//if there is a markup percentage and case price, calculate distributor markup and find total case price by first calculating dollar markup. If there is ounces, calculate ounces.
